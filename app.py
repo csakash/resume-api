@@ -13,6 +13,9 @@ from models.certificates import Certificates
 
 load_dotenv(path.join(getcwd(), '.env'))
 
+"""
+I AM IN MAIN BRANCH
+"""
 def create_app():
     app = Flask(__name__)
     app.config["SQLALCHEMY_DATABASE_URI"] = environ.get("DB_URI")
@@ -281,4 +284,3 @@ def create_app():
 
 if __name__ == '__main__':
     app = create_app()
-    app.run(host='0.0.0.0', port='4545', debug=True)
