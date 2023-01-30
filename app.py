@@ -13,6 +13,10 @@ from models.certificates import Certificates
 
 load_dotenv(path.join(getcwd(), '.env'))
 
+"""
+I am in dev branch
+"""
+
 def create_app():
     app = Flask(__name__)
     app.config["SQLALCHEMY_DATABASE_URI"] = environ.get("DB_URI")
